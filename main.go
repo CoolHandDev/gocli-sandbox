@@ -14,8 +14,13 @@
 
 package main
 
-import "github.com/coolhanddev/gocli-sandbox/cmd"
+import (
+	"fmt"
+
+	"github.com/coolhanddev/gocli-sandbox/cmd"
+)
 
 func main() {
 	cmd.Execute()
+	fmt.Println("")
 }
