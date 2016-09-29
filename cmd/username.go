@@ -8,7 +8,7 @@ import (
 
 func init() {
 	fmt.Println("username command")
-	RootCmd.AddCommand(usernameCmd)
+	//RootCmd.AddCommand(usernameCmd)
 }
 
 var usernameCmd = &cobra.Command{

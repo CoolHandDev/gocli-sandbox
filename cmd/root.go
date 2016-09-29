@@ -23,6 +23,7 @@ import (
 )
 
 var cfgFile string
+var userName string
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
@@ -61,6 +62,9 @@ func init() {
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
 	RootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+
+	//a flag for the user name
+	RootCmd.PersistentFlags().StringVar(&userName, "username", "u", "The username for SQL Server")
 }
 
 // initConfig reads in config file and ENV variables if set.
